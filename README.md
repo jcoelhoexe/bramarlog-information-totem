@@ -17,3 +17,15 @@ Aplicação web de exibição sequencial de informações com transição autom�
 2. Vá em Settings > Pages, escolha branch `main` e diretório `/ (root)`.
 3. Após salvar, o site estará disponível em:  
    `https://<usuario>.github.io/<repositorio>/`
+
+/bramarlog-information
+├── public/
+│   ├── images/           # (Home.png, Info.png, Meta.png)
+│   ├── index.html        # Página principal
+│   └── style.css         # Estilização
+├── src/
+│   ├── script.js         # Lógica de transição e fetch
+│   └── server.js         # Backend para scraping (Node.js + Express)
+├── .gitignore
+├── package.json
+└── README.md
