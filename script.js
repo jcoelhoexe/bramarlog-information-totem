@@ -1,7 +1,7 @@
 // Transição de telas
 let current = 0;
 const screens = document.querySelectorAll('.screen');
-const intervalTime = 10000;
+const intervalTime = 30000;
 function showScreen(index) {
   screens.forEach((el, i) => el.classList.toggle('active', i === index));
 }
@@ -45,7 +45,8 @@ async function carregarGrafico() {
 // Carrega informações dos pontos de ônibus
 async function carregarPontos() {
   const ids = ['2591', '7036'];
-  const baseUrl = 'https://www2.rmtcgoiania.com.br/pontoparada/';
+  const baseUrl = 'hhttps://www.rmtcgoiania.com.br/index.php/pontos-embarque-desembarque?query=2591&uid=6839e0f127239
+Ponto 2591 ';
   const infoDiv = document.getElementById('bus-info');
   const fragment = document.createDocumentFragment();
   for (const id of ids) {
