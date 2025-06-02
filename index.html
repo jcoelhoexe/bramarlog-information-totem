@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BramarLog</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="screen active" id="home">
+    <img src="images/Home.png" alt="Tela Inicial"/>
+  </div>
+  <div class="screen" id="info">
+    <img src="images/Info.png" alt="Informações"/>
+    <div id="bus-info" class="overlay"></div>
+  </div>
+  <div class="screen" id="meta">
+    <img src="images/Meta.png" alt="Metas"/>
+    <canvas id="grafico" class="overlay"></canvas>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
