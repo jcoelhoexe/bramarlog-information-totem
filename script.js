@@ -14,7 +14,7 @@ setInterval(nextScreen, intervalTime);
 
 // Carrega gráfico de metas da planilha do Google
 async function carregarGrafico() {
-  const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQvDoCTESTURL/pub?output=csv');
+  const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTiim0grc6c7zGJV0iNnCPDwoXUSY2nqwWFqdUVvXQp7xh9UPblAXEnJtDXvqqRSXDfF30BmFsYOQJh/pubhtml?gid=0&single=true');
   const csv = await response.text();
   const linhas = csv.trim().split('\n').slice(1);
   const datas = [], previsto = [], realizado = [];
