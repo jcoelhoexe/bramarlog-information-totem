@@ -1,7 +1,7 @@
 // Transição de telas
 let current = 0;
 const screens = document.querySelectorAll('.screen');
-const intervalTime = 10000;
+const intervalTime = 1000;
 function showScreen(index) {
   screens.forEach((el, i) => el.classList.toggle('active', i === index));
 }
@@ -14,7 +14,7 @@ setInterval(nextScreen, intervalTime);
 
 // Carrega gráfico de metas da planilha do Google
 async function carregarGrafico() {
-  const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTiim0grc6c7zGJV0iNnCPDwoXUSY2nqwWFqdUVvXQp7xh9UPblAXEnJtDXvqqRSXDfF30BmFsYOQJh/pubhtml?gid=0&single=true');
+  const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTiim0grc6c7zGJV0iNnCPDwoXUSY2nqwWFqdUVvXQp7xh9UPblAXEnJtDXvqqRSXDfF30BmFsYOQJh/pubhtml');
   const csv = await response.text();
   const linhas = csv.trim().split('\n').slice(1);
   const datas = [], previsto = [], realizado = [];
