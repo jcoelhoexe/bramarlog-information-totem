@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Vídeo Informativo -->
+        <div class="card card-large">
+            <div class="card-content">
+                <h2 class="title">Vídeo Informativo</h2>
+                <video controls>
+                    <source src="https://www.youtube.com/watch?v=VG1V2McVLHo&ab_channel=MRafifGaming" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </div>
+
+        <!-- Dados Meteorológicos -->
+        <div class="card">
+            <div class="card-content">
+                <div class="weather-icon">☁️</div>
+                <div>
+                    <h2 class="title">Clima Atual</h2>
+                    <p id="weather-info">27°C - Quente demais, sem risco de chuva </p>
+                    <p id="weather-info">22°C - Tempo limpo </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horário de Transporte Público -->
+        <div class="card">
+            <div class="card-content">
+              <div class="onibus-icon">🚍</div>
+                <h2 class="title">Transporte público </h2>
+                <ul id="transport-list">
+                    <li>Linha 213  - 10:30</li>
+                    <li>Linha 551 - 11:00</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Metas -->
+        <div class="card">
+            <div class="card-content">
+                <h2 class="title">Metas diárias</h2>
+                <ul id="meta-diaria">
+                  <li>1° 800 -  640</li>
+                  <li>2° 900 Meta Batida</li>
+                  <li>3° 1052 Meta Batida</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Informações Importantes -->
+        <div class="card card-wide">
+            <div class="card-content">
+                <h2 class="title">Informações Importantes</h2>
+                <p>Fique atento aos comunicados internos e atualizações diárias.</p>
+                <p>Caso tenha algum questionamento quanto a ponto de entrada e saida emcaminhar para ouvidoria@bramarlog.com.br </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
