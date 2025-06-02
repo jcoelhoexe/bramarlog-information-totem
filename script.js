@@ -1,7 +1,7 @@
 // Transição de telas
 let current = 0;
 const screens = document.querySelectorAll('.screen');
-const intervalTime = 30000;
+const intervalTime = 10000;
 function showScreen(index) {
   screens.forEach((el, i) => el.classList.toggle('active', i === index));
 }
